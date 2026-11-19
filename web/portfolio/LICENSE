@@ -1,0 +1,9 @@
+Licensing of the files in web/portfolio/
+
+- The figures inside index.html and en.html (inline SVG) and the two PDF copies (paper.pdf, supplement.pdf):
+  Creative Commons Attribution 4.0 International (CC BY 4.0), Copyright (c) 2026 Hao-Ting Ho.
+  Full text: https://creativecommons.org/licenses/by/4.0/
+- The fonts in fonts/ (Barlow, Barlow Semi Condensed, a subset of Noto Sans TC): SIL Open Font License 1.1,
+  each under its own license file in fonts/ (OFL.txt, OFL-NotoSansCJK.txt).
+- The HTML, CSS and JavaScript of the pages (including the text of the pages, which is built by
+  scripts/build_portfolio_pages.py): MIT License, see the LICENSE file in the repository root.

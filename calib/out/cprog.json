@@ -1,0 +1,235 @@
+{
+ "c_prog_closed_form": 0.7076402041056888,
+ "single_argmax_closed_form": 1.0,
+ "team_gap_closed_form": 0.0024035773843522623,
+ "single_ok": true,
+ "team_slowdown_lower_ok": false,
+ "scan": [
+  {
+   "c_prog": 0.67764,
+   "argmax": 0.99,
+   "team_gap": 0.005403597794921167,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.68014,
+   "argmax": 0.99,
+   "team_gap": 0.005153597794921194,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.68264,
+   "argmax": 0.99,
+   "team_gap": 0.004903597794921,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.68514,
+   "argmax": 0.99,
+   "team_gap": 0.004653597794921249,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.68764,
+   "argmax": 0.995,
+   "team_gap": 0.004403597794921166,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.69014,
+   "argmax": 0.995,
+   "team_gap": 0.004153597794921082,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.69264,
+   "argmax": 0.995,
+   "team_gap": 0.003903597794921221,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.69514,
+   "argmax": 0.995,
+   "team_gap": 0.0036535977949211373,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.69764,
+   "argmax": 0.995,
+   "team_gap": 0.003403597794921054,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.70014,
+   "argmax": 0.995,
+   "team_gap": 0.0031535977949211924,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.70264,
+   "argmax": 1.0,
+   "team_gap": 0.002903597794921109,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.70514,
+   "argmax": 1.0,
+   "team_gap": 0.0026535977949211365,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.70764,
+   "argmax": 1.0,
+   "team_gap": 0.002403597794921164,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.71014,
+   "argmax": 1.0,
+   "team_gap": 0.0021535977949211915,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.71264,
+   "argmax": 1.0,
+   "team_gap": 0.001903597794921108,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.71514,
+   "argmax": 1.005,
+   "team_gap": 0.0016535977949211356,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.71764,
+   "argmax": 1.005,
+   "team_gap": 0.001403597794921163,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.72014,
+   "argmax": 1.005,
+   "team_gap": 0.0011535977949210796,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.72264,
+   "argmax": 1.005,
+   "team_gap": 0.0009035977949211071,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.72514,
+   "argmax": 1.005,
+   "team_gap": 0.0006535977949211347,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.72764,
+   "argmax": 1.005,
+   "team_gap": 0.0004035977949210512,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.73014,
+   "argmax": 1.01,
+   "team_gap": 0.00015359779492118975,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.73264,
+   "argmax": 1.01,
+   "team_gap": -9.640220507889374e-05,
+   "both_ok": true
+  },
+  {
+   "c_prog": 0.73514,
+   "argmax": 1.01,
+   "team_gap": -0.0003464022050788662,
+   "both_ok": true
+  },
+  {
+   "c_prog": 0.73764,
+   "argmax": 1.01,
+   "team_gap": -0.0005964022050788387,
+   "both_ok": true
+  },
+  {
+   "c_prog": 0.74014,
+   "argmax": 1.01,
+   "team_gap": -0.0008464022050789222,
+   "both_ok": true
+  },
+  {
+   "c_prog": 0.74264,
+   "argmax": 1.015,
+   "team_gap": -0.0010964022050788946,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.74514,
+   "argmax": 1.015,
+   "team_gap": -0.001346402205078756,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.74764,
+   "argmax": 1.015,
+   "team_gap": -0.0015964022050789506,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.75014,
+   "argmax": 1.015,
+   "team_gap": -0.001846402205078923,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.75264,
+   "argmax": 1.015,
+   "team_gap": -0.0020964022050787845,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.75514,
+   "argmax": 1.02,
+   "team_gap": -0.002346402205078979,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.75764,
+   "argmax": 1.02,
+   "team_gap": -0.0025964022050789515,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.76014,
+   "argmax": 1.02,
+   "team_gap": -0.002846402205078813,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.76264,
+   "argmax": 1.02,
+   "team_gap": -0.0030964022050790074,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.76514,
+   "argmax": 1.02,
+   "team_gap": -0.003346402205078758,
+   "both_ok": false
+  },
+  {
+   "c_prog": 0.76764,
+   "argmax": 1.02,
+   "team_gap": -0.0035964022050788413,
+   "both_ok": false
+  }
+ ],
+ "c_prog_both_ok_range": [
+  0.73264,
+  0.74014
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "default": {
+  "follower": -0.8749999999999981,
+  "leader": -1.0,
+  "isolated": -1.0500000000000005,
+  "order_ok": true,
+  "gap_ok": true,
+  "lead_minus_iso": 0.05000000000000049,
+  "follow_minus_lead": 0.1250000000000019,
+  "c_iso": 0.05
+ },
+ "negative_control": {
+  "follower": -0.8749999999999981,
+  "leader": -1.0,
+  "isolated": -1.0,
+  "order_ok": false,
+  "gap_ok": false,
+  "lead_minus_iso": 0.0,
+  "follow_minus_lead": 0.1250000000000019,
+  "c_iso": 0.0
+ }
+}

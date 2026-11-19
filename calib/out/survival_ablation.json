@@ -1,0 +1,415 @@
+{
+ "n_ep": 512,
+ "policies": {
+  "mp_A_s1": {
+   "n_swaps_3alive": 11459,
+   "incoming_is_higher_of_two_followers": 0.530500043633825,
+   "incoming_is_global_max": 0.3850248712802164,
+   "outgoing_is_lowest": 0.40535823370276636,
+   "mean_energy_in_minus_other_follower": 0.0015587318518442605,
+   "leader_rank_dist_3alive": [
+    0.30690367166687293,
+    0.32168934454525916,
+    0.3714069837878679
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33231770833333335,
+    0.33222005208333333,
+    0.33544270833333334
+   ],
+   "n_deaths": 36,
+   "death_rate_per_bird": 0.0234375,
+   "frac_deaths_while_leader": 0.4444444444444444,
+   "death_hazard_per_1000_leader_steps": 0.1041687012116122,
+   "death_hazard_per_1000_follower_steps": 0.06511964106053847,
+   "swaps_per_episode": 22.416015625,
+   "mean_ef_when_leading": 0.5281376726081629,
+   "mean_ef_when_following": 0.5296274463971975
+  },
+  "mp_A_s2": {
+   "n_swaps_3alive": 6987,
+   "incoming_is_higher_of_two_followers": 0.5430084442536138,
+   "incoming_is_global_max": 0.40074423930156006,
+   "outgoing_is_lowest": 0.43251753256046943,
+   "mean_energy_in_minus_other_follower": 0.0026796721255227325,
+   "leader_rank_dist_3alive": [
+    0.2907721967486453,
+    0.3162776156731972,
+    0.3929501875781576
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.3446549479166667,
+    0.33748697916666665,
+    0.3178580729166667
+   ],
+   "n_deaths": 26,
+   "death_rate_per_bird": 0.016927083333333332,
+   "frac_deaths_while_leader": 0.5384615384615384,
+   "death_hazard_per_1000_leader_steps": 0.09114583333333333,
+   "death_hazard_per_1000_follower_steps": 0.039070639716607625,
+   "swaps_per_episode": 13.67578125,
+   "mean_ef_when_leading": 0.5301230673318332,
+   "mean_ef_when_following": 0.5325039745605855
+  },
+  "mp_A_s3": {
+   "n_swaps_3alive": 9567,
+   "incoming_is_higher_of_two_followers": 0.5393017664889725,
+   "incoming_is_global_max": 0.39604891815616183,
+   "outgoing_is_lowest": 0.4121459182606878,
+   "mean_energy_in_minus_other_follower": 0.0018605092442232822,
+   "leader_rank_dist_3alive": [
+    0.30306602237649294,
+    0.3254099535016997,
+    0.3715240241218073
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33857421875,
+    0.33770833333333333,
+    0.3237174479166667
+   ],
+   "n_deaths": 31,
+   "death_rate_per_bird": 0.020182291666666668,
+   "frac_deaths_while_leader": 0.4838709677419355,
+   "death_hazard_per_1000_leader_steps": 0.09765625,
+   "death_hazard_per_1000_follower_steps": 0.052091303031388266,
+   "swaps_per_episode": 18.708984375,
+   "mean_ef_when_leading": 0.5295459974714106,
+   "mean_ef_when_following": 0.5309434375116366
+  },
+  "ab_E_s1": {
+   "n_swaps_3alive": 11616,
+   "incoming_is_higher_of_two_followers": 0.5378787878787878,
+   "incoming_is_global_max": 0.38713842975206614,
+   "outgoing_is_lowest": 0.4044421487603306,
+   "mean_energy_in_minus_other_follower": 0.0014902765496801354,
+   "leader_rank_dist_3alive": [
+    0.30647966595227705,
+    0.3252665932734462,
+    0.36825374077427675
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.3339453125,
+    0.34018880208333335,
+    0.3258463541666667
+   ],
+   "n_deaths": 30,
+   "death_rate_per_bird": 0.01953125,
+   "frac_deaths_while_leader": 0.43333333333333335,
+   "death_hazard_per_1000_leader_steps": 0.08463706973443491,
+   "death_hazard_per_1000_follower_steps": 0.055354578637691255,
+   "swaps_per_episode": 22.71875,
+   "mean_ef_when_leading": 0.528368142726839,
+   "mean_ef_when_following": 0.5298438787029671
+  },
+  "ab_E_s2": {
+   "n_swaps_3alive": 986,
+   "incoming_is_higher_of_two_followers": 0.6303245436105477,
+   "incoming_is_global_max": 0.49797160243407707,
+   "outgoing_is_lowest": 0.539553752535497,
+   "mean_energy_in_minus_other_follower": 0.026873385532524528,
+   "leader_rank_dist_3alive": [
+    0.08566138573557702,
+    0.1312135198839202,
+    0.7831250943805028
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33483723958333333,
+    0.34133463541666664,
+    0.323828125
+   ],
+   "n_deaths": 238,
+   "death_rate_per_bird": 0.15494791666666666,
+   "frac_deaths_while_leader": 0.18067226890756302,
+   "death_hazard_per_1000_leader_steps": 0.2799479166666667,
+   "death_hazard_per_1000_follower_steps": 0.6374444687799313,
+   "swaps_per_episode": 2.037109375,
+   "mean_ef_when_leading": 0.5156756111334125,
+   "mean_ef_when_following": 0.5499128995532317
+  },
+  "ab_E_s3": {
+   "n_swaps_3alive": 966,
+   "incoming_is_higher_of_two_followers": 0.5967908902691511,
+   "incoming_is_global_max": 0.4834368530020704,
+   "outgoing_is_lowest": 0.5548654244306418,
+   "mean_energy_in_minus_other_follower": 0.01767778308324826,
+   "leader_rank_dist_3alive": [
+    0.08390229798195523,
+    0.14447649776247395,
+    0.7716212042555708
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.3299869791666667,
+    0.35137369791666667,
+    0.3186393229166667
+   ],
+   "n_deaths": 228,
+   "death_rate_per_bird": 0.1484375,
+   "frac_deaths_while_leader": 0.2982456140350877,
+   "death_hazard_per_1000_leader_steps": 0.4427083333333333,
+   "death_hazard_per_1000_follower_steps": 0.523257144912796,
+   "swaps_per_episode": 2.13671875,
+   "mean_ef_when_leading": 0.515784326553029,
+   "mean_ef_when_following": 0.5503997131618916
+  },
+  "random_net_12345": {
+   "n_swaps_3alive": 21942,
+   "incoming_is_higher_of_two_followers": 0.5218986418740316,
+   "incoming_is_global_max": 0.3643241272445538,
+   "outgoing_is_lowest": 0.37631027253668764,
+   "mean_energy_in_minus_other_follower": 0.0007134697187926477,
+   "leader_rank_dist_3alive": [
+    0.3210419640122262,
+    0.32987271980761335,
+    0.3490853161801605
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.3362044270833333,
+    0.33361328125,
+    0.3301822916666667
+   ],
+   "n_deaths": 56,
+   "death_rate_per_bird": 0.036458333333333336,
+   "frac_deaths_while_leader": 0.4107142857142857,
+   "death_hazard_per_1000_leader_steps": 0.14973958333333334,
+   "death_hazard_per_1000_follower_steps": 0.10747960330255509,
+   "swaps_per_episode": 42.912109375,
+   "mean_ef_when_leading": 0.5249684926968328,
+   "mean_ef_when_following": 0.525429303397251
+  },
+  "random_net_1": {
+   "n_swaps_3alive": 21918,
+   "incoming_is_higher_of_two_followers": 0.5223332420841318,
+   "incoming_is_global_max": 0.3645861848708824,
+   "outgoing_is_lowest": 0.37622045807099186,
+   "mean_energy_in_minus_other_follower": 0.0007137079446619919,
+   "leader_rank_dist_3alive": [
+    0.3211983759229932,
+    0.3298140653410757,
+    0.34898755873593107
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33647786458333334,
+    0.33352213541666664,
+    0.33
+   ],
+   "n_deaths": 56,
+   "death_rate_per_bird": 0.036458333333333336,
+   "frac_deaths_while_leader": 0.4107142857142857,
+   "death_hazard_per_1000_leader_steps": 0.14973958333333334,
+   "death_hazard_per_1000_follower_steps": 0.10747960330255509,
+   "swaps_per_episode": 42.865234375,
+   "mean_ef_when_leading": 0.5249821002329029,
+   "mean_ef_when_following": 0.5254338008552287
+  },
+  "random_net_2": {
+   "n_swaps_3alive": 21937,
+   "incoming_is_higher_of_two_followers": 0.522245521265442,
+   "incoming_is_global_max": 0.3646350913980945,
+   "outgoing_is_lowest": 0.3762592879609792,
+   "mean_energy_in_minus_other_follower": 0.0007161814873123547,
+   "leader_rank_dist_3alive": [
+    0.3211006184787638,
+    0.3298662026446647,
+    0.3490331788765714
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33638671875,
+    0.33337890625,
+    0.330234375
+   ],
+   "n_deaths": 56,
+   "death_rate_per_bird": 0.036458333333333336,
+   "frac_deaths_while_leader": 0.4107142857142857,
+   "death_hazard_per_1000_leader_steps": 0.14973958333333334,
+   "death_hazard_per_1000_follower_steps": 0.10747960330255509,
+   "swaps_per_episode": 42.90234375,
+   "mean_ef_when_leading": 0.5249766428351581,
+   "mean_ef_when_following": 0.525429569361926
+  },
+  "random_net_3": {
+   "n_swaps_3alive": 21962,
+   "incoming_is_higher_of_two_followers": 0.5218559329751389,
+   "incoming_is_global_max": 0.36426554958564794,
+   "outgoing_is_lowest": 0.3753756488480102,
+   "mean_energy_in_minus_other_follower": 0.0007138598464173585,
+   "leader_rank_dist_3alive": [
+    0.32065093423530866,
+    0.3305505047542704,
+    0.34879856101042095
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.33625651041666665,
+    0.333671875,
+    0.33007161458333334
+   ],
+   "n_deaths": 58,
+   "death_rate_per_bird": 0.037760416666666664,
+   "frac_deaths_while_leader": 0.43103448275862066,
+   "death_hazard_per_1000_leader_steps": 0.16276041666666666,
+   "death_hazard_per_1000_follower_steps": 0.10747960330255509,
+   "swaps_per_episode": 42.951171875,
+   "mean_ef_when_leading": 0.5249550223123461,
+   "mean_ef_when_following": 0.5254169123234613
+  },
+  "rot30": {
+   "n_swaps_3alive": 7680,
+   "incoming_is_higher_of_two_followers": 0.546875,
+   "incoming_is_global_max": 0.40143229166666666,
+   "outgoing_is_lowest": 0.42682291666666666,
+   "mean_energy_in_minus_other_follower": 0.0022908182586737287,
+   "leader_rank_dist_3alive": [
+    0.3184076686137756,
+    0.33100852429978966,
+    0.3505838070864347
+   ],
+   "swaps_per_s_note": "per-decision swap counts only among 3-alive swaps",
+   "lead_share_by_body": [
+    0.3333333333333333,
+    0.3338932291666667,
+    0.33276041666666667
+   ],
+   "n_deaths": 21,
+   "death_rate_per_bird": 0.013671875,
+   "frac_deaths_while_leader": 0.7142857142857143,
+   "death_hazard_per_1000_leader_steps": 0.09765752158231226,
+   "death_hazard_per_1000_follower_steps": 0.019533729868049656,
+   "swaps_per_episode": 15.01953125,
+   "mean_ef_when_leading": 0.5311270195839003,
+   "mean_ef_when_following": 0.5314178825782105
+  }
+ },
+ "paired": {
+  "mp_A_s* vs rot30": {
+   "per_seed": {
+    "mp_A_s1": {
+     "mean": -0.011438497342169285,
+     "ci95_episode": 0.00604584753942082
+    },
+    "mp_A_s2": {
+     "mean": -0.0029053082689642906,
+     "ci95_episode": 0.006851738088342133
+    },
+    "mp_A_s3": {
+     "mean": -0.007346672005951405,
+     "ci95_episode": 0.005674590438867529
+    }
+   },
+   "seed_mean": -0.007230159205694993,
+   "seed_level_t_ci95": 0.010601771938245604,
+   "pooled_episode": {
+    "mean": -0.0072301579639315605,
+    "ci95": 0.004880421323643801
+   }
+  },
+  "mp_A_s* vs random_net_mean": {
+   "per_seed": {
+    "mp_A_s1": {
+     "mean": 0.017982477322220802,
+     "ci95_episode": 0.006663488530923716
+    },
+    "mp_A_s2": {
+     "mean": 0.026515666395425797,
+     "ci95_episode": 0.008476620929171074
+    },
+    "mp_A_s3": {
+     "mean": 0.022074302658438683,
+     "ci95_episode": 0.00736155163628597
+    }
+   },
+   "seed_mean": 0.022190815458695095,
+   "seed_level_t_ci95": 0.010601771938245604,
+   "pooled_episode": {
+    "mean": 0.022190816700458527,
+    "ci95": 0.006485975224618942
+   }
+  },
+  "mp_A_s* abs reward": {
+   "mp_A_s1": {
+    "mean": 1.0047438144683838,
+    "ci95": 0.007781354662334222
+   },
+   "mp_A_s2": {
+    "mean": 1.0132770538330078,
+    "ci95": 0.006740066720489979
+   },
+   "mp_A_s3": {
+    "mean": 1.008835792541504,
+    "ci95": 0.007303613549018159
+   }
+  },
+  "ab_E_s* vs rot30": {
+   "per_seed": {
+    "ab_E_s1": {
+     "mean": -0.007575924042612314,
+     "ci95_episode": 0.0055268650762923385
+    },
+    "ab_E_s2": {
+     "mean": -0.13687729835510254,
+     "ci95_episode": 0.014872270189075106
+    },
+    "ab_E_s3": {
+     "mean": -0.13023069500923157,
+     "ci95_episode": 0.014640695647021015
+    }
+   },
+   "seed_mean": -0.09156130580231547,
+   "seed_level_t_ci95": 0.18086847169686276,
+   "pooled_episode": {
+    "mean": -0.09156130254268646,
+    "ci95": 0.009411673788076561
+   }
+  },
+  "ab_E_s* vs random_net_mean": {
+   "per_seed": {
+    "ab_E_s1": {
+     "mean": 0.021845050156116486,
+     "ci95_episode": 0.007293871700111571
+    },
+    "ab_E_s2": {
+     "mean": -0.10745632648468018,
+     "ci95_episode": 0.016464675590403863
+    },
+    "ab_E_s3": {
+     "mean": -0.1008097231388092,
+     "ci95_episode": 0.01618510369042996
+    }
+   },
+   "seed_mean": -0.06214033315579096,
+   "seed_level_t_ci95": 0.18086847503268047,
+   "pooled_episode": {
+    "mean": -0.062140338122844696,
+    "ci95": 0.011341690592501263
+   }
+  },
+  "ab_E_s* abs reward": {
+   "ab_E_s1": {
+    "mean": 1.0086064338684082,
+    "ci95": 0.007164496021706809
+   },
+   "ab_E_s2": {
+    "mean": 0.8793051242828369,
+    "ci95": 0.014427527423965041
+   },
+   "ab_E_s3": {
+    "mean": 0.8859517574310303,
+    "ci95": 0.014338131324095402
+   }
+  },
+  "rot30 abs": {
+   "mean": 1.0161824226379395
+  },
+  "random_net_mean abs": {
+   "mean": 0.9867614507675171
+  }
+ }
+}

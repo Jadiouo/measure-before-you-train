@@ -1,0 +1,20 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.scratch/
+runs/
+web/node_modules/
+web/dist/
+# LaTeX intermediates
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz

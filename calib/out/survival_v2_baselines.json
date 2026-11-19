@@ -1,0 +1,182 @@
+{
+ "n_ep": 512,
+ "env": "edge eps=1.02 m_g=1 h=0.05 p=0.05 beta=0.5 N=3 mutual random_slots, surv_obs_abs, surv_pw_spread=0.05 redrawn",
+ "results": {
+  "pathT2.0/fixed": {
+   "reward": 0.8251087069511414,
+   "reward_ci95_episode": 0.014008855118836995,
+   "all_arrive": 0.365234375,
+   "any_death": 0.634765625,
+   "swaps_per_ep": 0.0,
+   "n_swaps_3alive": 0,
+   "incoming_is_higher_energy": 0.0,
+   "incoming_is_global_max": 0.0,
+   "outgoing_is_lowest": 0.0,
+   "lead_share_by_body": [
+    0.3384244791666667,
+    0.3424934895833333,
+    0.31908203125
+   ],
+   "minus_rot30_mean": -0.16240626573562622,
+   "minus_rot30_ci95_episode": 0.016438707863365088
+  },
+  "pathT2.0/rot30": {
+   "reward": 0.9875149726867676,
+   "reward_ci95_episode": 0.010433119783895285,
+   "all_arrive": 0.87109375,
+   "any_death": 0.12890625,
+   "swaps_per_ep": 15.0,
+   "n_swaps_3alive": 7680,
+   "incoming_is_higher_energy": 0.528515625,
+   "incoming_is_global_max": 0.34544270833333335,
+   "outgoing_is_lowest": 0.3977864583333333,
+   "lead_share_by_body": [
+    0.33366536458333335,
+    0.33378255208333335,
+    0.3325390625
+   ]
+  },
+  "pathT2.0/rot16": {
+   "reward": 0.9804954528808594,
+   "reward_ci95_episode": 0.01094780195138664,
+   "all_arrive": 0.853515625,
+   "any_death": 0.146484375,
+   "swaps_per_ep": 24.984375,
+   "n_swaps_3alive": 12763,
+   "incoming_is_higher_energy": 0.5215074825667947,
+   "incoming_is_global_max": 0.33973203792211865,
+   "outgoing_is_lowest": 0.37608712685105383,
+   "lead_share_by_body": [
+    0.33346354166666664,
+    0.33384765625,
+    0.33268880208333335
+   ],
+   "minus_rot30_mean": -0.007019517477601767,
+   "minus_rot30_ci95_episode": 0.003796179486994131
+  },
+  "pathT2.0/gate30s": {
+   "reward": 1.0284481048583984,
+   "reward_ci95_episode": 0.0036129631852502265,
+   "all_arrive": 0.986328125,
+   "any_death": 0.013671875,
+   "swaps_per_ep": 5.77734375,
+   "n_swaps_3alive": 2940,
+   "incoming_is_higher_energy": 0.654421768707483,
+   "incoming_is_global_max": 0.654421768707483,
+   "outgoing_is_lowest": 0.6775510204081633,
+   "lead_share_by_body": [
+    0.5650520833333333,
+    0.21999348958333334,
+    0.21495442708333334
+   ],
+   "minus_rot30_mean": 0.04093308746814728,
+   "minus_rot30_ci95_episode": 0.009503205547785587
+  },
+  "pathT2.0/gate16s": {
+   "reward": 1.0295456647872925,
+   "reward_ci95_episode": 0.00305515754774264,
+   "all_arrive": 0.990234375,
+   "any_death": 0.009765625,
+   "swaps_per_ep": 7.603515625,
+   "n_swaps_3alive": 3873,
+   "incoming_is_higher_energy": 0.6449780531887426,
+   "incoming_is_global_max": 0.6449780531887426,
+   "outgoing_is_lowest": 0.6646010844306739,
+   "lead_share_by_body": [
+    0.5723893229166667,
+    0.218515625,
+    0.20909505208333334
+   ],
+   "minus_rot30_mean": 0.0420306921005249,
+   "minus_rot30_ci95_episode": 0.009800924300221463
+  },
+  "pathT3.0/fixed": {
+   "reward": 0.8251010179519653,
+   "reward_ci95_episode": 0.014009362198108142,
+   "all_arrive": 0.365234375,
+   "any_death": 0.634765625,
+   "swaps_per_ep": 0.0,
+   "n_swaps_3alive": 0,
+   "incoming_is_higher_energy": 0.0,
+   "incoming_is_global_max": 0.0,
+   "outgoing_is_lowest": 0.0,
+   "lead_share_by_body": [
+    0.3384244791666667,
+    0.3424934895833333,
+    0.31908203125
+   ],
+   "minus_rot30_mean": -0.14781175553798676,
+   "minus_rot30_ci95_episode": 0.017093123297282756
+  },
+  "pathT3.0/rot30": {
+   "reward": 0.9729127883911133,
+   "reward_ci95_episode": 0.011534122566089879,
+   "all_arrive": 0.83203125,
+   "any_death": 0.16796875,
+   "swaps_per_ep": 15.0,
+   "n_swaps_3alive": 7680,
+   "incoming_is_higher_energy": 0.52734375,
+   "incoming_is_global_max": 0.34479166666666666,
+   "outgoing_is_lowest": 0.3966145833333333,
+   "lead_share_by_body": [
+    0.3337630208333333,
+    0.33372395833333335,
+    0.33249348958333336
+   ]
+  },
+  "pathT3.0/rot16": {
+   "reward": 0.9512162804603577,
+   "reward_ci95_episode": 0.013039615897433108,
+   "all_arrive": 0.77734375,
+   "any_death": 0.22265625,
+   "swaps_per_ep": 24.96875,
+   "n_swaps_3alive": 12741,
+   "incoming_is_higher_energy": 0.5198963974570285,
+   "incoming_is_global_max": 0.3391413546817361,
+   "outgoing_is_lowest": 0.37579467859665644,
+   "lead_share_by_body": [
+    0.33365234375,
+    0.3337630208333333,
+    0.33258463541666666
+   ],
+   "minus_rot30_mean": -0.021696489304304123,
+   "minus_rot30_ci95_episode": 0.006782332765556818
+  },
+  "pathT3.0/gate30s": {
+   "reward": 1.0271719694137573,
+   "reward_ci95_episode": 0.003835541021508512,
+   "all_arrive": 0.984375,
+   "any_death": 0.015625,
+   "swaps_per_ep": 5.7265625,
+   "n_swaps_3alive": 2917,
+   "incoming_is_higher_energy": 0.6475831333561879,
+   "incoming_is_global_max": 0.6475831333561879,
+   "outgoing_is_lowest": 0.6842646554679466,
+   "lead_share_by_body": [
+    0.5647135416666667,
+    0.22039713541666667,
+    0.21488932291666665
+   ],
+   "minus_rot30_mean": 0.05425926670432091,
+   "minus_rot30_ci95_episode": 0.01077005552032604
+  },
+  "pathT3.0/gate16s": {
+   "reward": 1.026777744293213,
+   "reward_ci95_episode": 0.004259893602290163,
+   "all_arrive": 0.986328125,
+   "any_death": 0.013671875,
+   "swaps_per_ep": 7.49609375,
+   "n_swaps_3alive": 3824,
+   "incoming_is_higher_energy": 0.6406903765690377,
+   "incoming_is_global_max": 0.6406903765690377,
+   "outgoing_is_lowest": 0.6574267782426778,
+   "lead_share_by_body": [
+    0.5726236979166667,
+    0.21839192708333333,
+    0.208984375
+   ],
+   "minus_rot30_mean": 0.05386503040790558,
+   "minus_rot30_ci95_episode": 0.0106273337789225
+  }
+ }
+}

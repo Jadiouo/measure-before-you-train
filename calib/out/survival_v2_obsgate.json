@@ -1,0 +1,87 @@
+{
+ "posthoc": true,
+ "n_ep": 512,
+ "env": "pathT2.0 edge eps=1.02 m_g=1 h=0.05 p=0.05 N=3 mutual random_slots surv_obs_abs surv_pw_spread=0.05 redrawn; same keys PRNGKey(777) as survival_v2_baselines.json",
+ "equivalence": {
+  "n_calls": 2400,
+  "max_abs_diff_e_self": 0.0,
+  "max_abs_diff_e_min_other": 0.0,
+  "gate_mismatch_obs_vs_stfrac": 0,
+  "gate_mismatch_obs_vs_absolute_E_rem": 0,
+  "frac_gate_true": 0.05541666666666667
+ },
+ "results": {
+  "rot30": {
+   "reward": 0.9875149726867676,
+   "reward_ci95_episode": 0.010433119783895285,
+   "all_arrive": 0.87109375,
+   "any_death": 0.12890625,
+   "swaps_per_ep": 15.0,
+   "n_swaps_3alive": 7680,
+   "outgoing_is_lowest": 0.3977864583333333,
+   "lead_share_by_body": [
+    0.33366536458333335,
+    0.33378255208333335,
+    0.3325390625
+   ],
+   "arrival": 0.9557291666666666,
+   "incoming_is_max": 0.34544270833333335
+  },
+  "gate30s": {
+   "reward": 1.0284481048583984,
+   "reward_ci95_episode": 0.0036129631852502265,
+   "all_arrive": 0.986328125,
+   "any_death": 0.013671875,
+   "swaps_per_ep": 5.77734375,
+   "n_swaps_3alive": 2940,
+   "outgoing_is_lowest": 0.6775510204081633,
+   "lead_share_by_body": [
+    0.5650520833333333,
+    0.21999348958333334,
+    0.21495442708333334
+   ],
+   "arrival": 0.9954427083333334,
+   "incoming_is_max": 0.654421768707483
+  },
+  "lowest_gate15s": {
+   "reward": 1.028550386428833,
+   "reward_ci95_episode": 0.003591029043322846,
+   "all_arrive": 0.986328125,
+   "any_death": 0.013671875,
+   "swaps_per_ep": 5.357421875,
+   "n_swaps_3alive": 2734,
+   "outgoing_is_lowest": 1.0,
+   "lead_share_by_body": [
+    0.6071158854166666,
+    0.19860026041666667,
+    0.19428385416666666
+   ],
+   "arrival": 0.9954427083333334,
+   "incoming_is_max": 0.6927578639356254,
+   "minus_rot30_mean": 0.04103543609380722,
+   "minus_rot30_ci95_episode": 0.009841111978821109,
+   "minus_gate30s_mean": 0.00010235211811959743,
+   "minus_gate30s_ci95_episode": 0.0018032787614105394
+  },
+  "lowest_gate30s": {
+   "reward": 1.0293246507644653,
+   "reward_ci95_episode": 0.003343441991557155,
+   "all_arrive": 0.98828125,
+   "any_death": 0.01171875,
+   "swaps_per_ep": 4.25,
+   "n_swaps_3alive": 2167,
+   "outgoing_is_lowest": 1.0,
+   "lead_share_by_body": [
+    0.60279296875,
+    0.20114583333333333,
+    0.19606119791666668
+   ],
+   "arrival": 0.99609375,
+   "incoming_is_max": 0.6885094600830641,
+   "minus_rot30_mean": 0.041809722781181335,
+   "minus_rot30_ci95_episode": 0.009734899286395624,
+   "minus_gate30s_mean": 0.0008766346145421267,
+   "minus_gate30s_ci95_episode": 0.0012732994281793816
+  }
+ }
+}

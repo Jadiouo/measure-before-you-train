@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or the paper's results, please cite it as below. (Paper link to be added.)"
+title: "Measure Before You Train: A Prediction-First Headroom Test for Learned Policies in Drone Formations"
+version: 0.1.0
+date-released: 2026-11-19
+authors:
+  - family-names: "Ho"
+    given-names: "Hao-Ting"
+url: "https://github.com/Jadiouo/measure-before-you-train"
+repository-code: "https://github.com/Jadiouo/measure-before-you-train"
+license: MIT
+# preferred-citation: paper (arXiv link to be added)

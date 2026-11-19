@@ -1,0 +1,15 @@
+{
+  "name": "geese-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "M1b: browser-side JS port of the geese V-formation sim (physics + LLC + rule-based HLC) with an interactive viewer",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "build": "node build.mjs",
+    "bench": "node bench/bench_step.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

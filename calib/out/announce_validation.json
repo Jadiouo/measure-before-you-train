@@ -1,0 +1,131 @@
+{
+ "N3_T600": {
+  "fixed": {
+   "handover_rate_per_s": 0.0,
+   "max_share_dev": 0.6666666666666666,
+   "lead_share": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "n_swaps": 0.0,
+   "cost_mean": 550.1628986204674,
+   "cost_max_bird": 600.0066666666667,
+   "cost_vs_fixed_pct": 0.0
+  },
+  "announce": {
+   "handover_rate_per_s": 0.03,
+   "max_share_dev": 0.026666666666666672,
+   "lead_share": [
+    0.36,
+    0.32,
+    0.32
+   ],
+   "n_swaps": 18.0,
+   "cost_mean": 555.3758385492825,
+   "cost_max_bird": 557.2166666666667,
+   "cost_vs_fixed_pct": 0.9475266220035028
+  },
+  "announce_comply50": {
+   "handover_rate_per_s": 0.02888888888888889,
+   "max_share_dev": 0.015555555555555564,
+   "lead_share": [
+    0.338,
+    0.336,
+    0.327
+   ],
+   "n_swaps": 17.666666666666668,
+   "cost_mean": 555.2314482642529,
+   "cost_max_bird": 556.1133333333333,
+   "cost_vs_fixed_pct": 0.9212816161349391
+  }
+ },
+ "N9_T600": {
+  "fixed": {
+   "handover_rate_per_s": 0.0,
+   "max_share_dev": 0.8888888888888888,
+   "lead_share": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "n_swaps": 0.0,
+   "cost_mean": 515.0044149167308,
+   "cost_max_bird": 600.0066666666667,
+   "cost_vs_fixed_pct": 0.0
+  },
+  "announce": {
+   "handover_rate_per_s": 0.03,
+   "max_share_dev": 0.03555555555555556,
+   "lead_share": [
+    0.147,
+    0.107,
+    0.107,
+    0.107,
+    0.107,
+    0.107,
+    0.107,
+    0.107,
+    0.107
+   ],
+   "n_swaps": 63.0,
+   "cost_mean": 522.8217947936542,
+   "cost_max_bird": 526.1766666666667,
+   "cost_vs_fixed_pct": 1.5179248275352109
+  },
+  "announce_comply50": {
+   "handover_rate_per_s": 0.02888888888888889,
+   "max_share_dev": 0.02037037037037037,
+   "lead_share": [
+    0.119,
+    0.11,
+    0.111,
+    0.118,
+    0.111,
+    0.112,
+    0.115,
+    0.111,
+    0.092
+   ],
+   "n_swaps": 59.333333333333336,
+   "cost_mean": 522.3304658941943,
+   "cost_max_bird": 525.17,
+   "cost_vs_fixed_pct": 1.4225219755927831
+  }
+ },
+ "event_replan_N5": {
+  "n_calls": 2,
+  "calls": [
+   {
+    "t": 0.0,
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "period": 30.0,
+    "announce": true
+   },
+   {
+    "t": 200.0,
+    "order": [
+     2,
+     4,
+     3,
+     1,
+     0
+    ],
+    "period": 30.0,
+    "announce": true
+   }
+  ]
+ }
+}

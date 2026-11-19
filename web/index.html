@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>大雁編隊：即時模擬</title>
+<meta name="description" content="瀏覽器即時執行的大雁 V 字編隊模擬：點一隻鳥、吹一陣側風，看鳥群怎麼重組輪替。">
+<style>/*CSS*/</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>大雁編隊 <span class="sub">即時模擬</span></h1>
+    <p class="lede">點一隻鳥讓牠變成搭便車者、吹一陣側風、弄傷領頭者，看鳥群怎麼重組。物理與論文使用的 JAX 模型同一套（JS 移植，誤差 &lt; 1e-12 m）。</p>
+  </div>
+</header>
+
+<main class="app">
+  <section class="stage" aria-label="編隊模擬">
+    <div class="canvas-wrap">
+      <canvas id="scene" aria-label="鳥群視圖"></canvas>
+      <div class="hud-top">
+        <button id="btn-play" class="chip" aria-label="暫停或繼續">暫停</button>
+        <div class="seg" id="seg-speed" role="group" aria-label="模擬速度">
+          <button data-v="1">1×</button><button data-v="2">2×</button><button data-v="4" class="on">4×</button><button data-v="8">8×</button><button data-v="16">16×</button>
+        </div>
+      </div>
+      <div class="legend" aria-hidden="true">
+        <span><i class="lg lead"></i>領頭</span><span><i class="lg hollow"></i>搭便車者</span><span><i class="lg cross">+</i>受傷</span><span><i class="lg heatp"></i>省力尾流</span><span><i class="lg heatn"></i>下洗</span>
+      </div>
+    </div>
+    <p id="hint" class="hint" role="status">點鳥來操作。先選下面的「點鳥動作」。</p>
+    <div class="card">
+      <div class="card-h"><h2>點鳥動作</h2></div>
+      <div class="seg wide" id="seg-tool" role="group" aria-label="點鳥動作">
+        <button data-v="free" class="on">搭便車者</button><button data-v="injure">受傷／痊癒</button><button data-v="pair">對調兩隻碼</button>
+      </div>
+      <p class="fine" id="tool-help"></p>
+      <div class="row">
+        <button class="btn" id="btn-relabel-all">全員換碼</button>
+        <button class="btn ghost" id="btn-sham">sham 換碼（無效果）</button>
+      </div>
+      <label class="check"><input type="checkbox" id="chk-resetmem"> 換碼同時清空記憶（reset_mem）</label>
+    </div>
+
+    <div class="card tl-card">
+      <div class="card-h"><h2>輪替時間軸</h2><span class="muted">每列一隻鳥，亮條＝當時領頭；虛線是事件（風／傷／搭便車／換碼）</span></div>
+      <canvas id="timeline" aria-label="輪替時間軸"></canvas>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="card" id="card-s">
+      <div class="card-h"><h2>全隊省力</h2><span class="tag">即時</span></div>
+      <div class="big-row">
+        <div><div class="big" id="v-s">–</div><div class="cap">S：相對全員單飛省下的能量</div></div>
+        <canvas id="spark" width="120" height="38" aria-hidden="true"></canvas>
+      </div>
+      <div class="kv">
+        <div><span class="k">無政府代價</span><span class="v" id="v-ac">–</span></div>
+        <div><span class="k">近 60 秒 S</span><span class="v" id="v-s60">–</span></div>
+        <div><span class="k">換位率</span><span class="v" id="v-rate">–</span></div>
+        <div><span class="k">領頭者任期</span><span class="v" id="v-tenure">–</span></div>
+      </div>
+      <p class="fine">無政府代價＝這群鳥的總耗能，相對「同樣的風與傷、領頭者固定不換」影子模擬多出的比例（換位的熱山芋稅）。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><h2>每隻鳥的能量</h2><span class="muted">累積耗能 ÷ 單飛耗能（越短越省）</span></div>
+      <div id="bars" class="bars"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><h2>環境</h2></div>
+      <div class="field"><label for="rng-wind">側風 <b id="o-wind">0.0</b> m/s</label><input type="range" id="rng-wind" min="0" max="6" step="0.5" value="0"></div>
+      <div class="field"><label for="rng-dir">風向 <b id="o-dir">90°</b>（90° 從右側吹向左）</label><input type="range" id="rng-dir" min="0" max="355" step="5" value="90"></div>
+      <div class="row">
+        <button class="btn ghost" id="btn-hurt-lead">領頭者受傷</button>
+        <button class="btn ghost" id="btn-free-lead">領頭者變搭便車者</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><h2>隊伍與策略</h2></div>
+      <div class="field"><label for="rng-n">鳥數 N <b id="o-n">9</b></label><input type="range" id="rng-n" min="3" max="14" step="1" value="9"></div>
+      <div class="lbl">大腦（誰在決定換不換位）</div>
+      <div class="seg wide" id="seg-brain" role="group" aria-label="大腦">
+        <button data-v="rule" class="on">規則</button><button data-v="unilateral">MARL 單方</button><button data-v="mutual">MARL 雙方同意</button>
+      </div>
+      <p class="fine" id="brain-note">MARL＝強化學習訓練出的策略（3 隻鳥、GRU，權重內嵌在這個網頁、在你的瀏覽器裡推論）。只在 N=3 可用。</p>
+      <label class="check"><input type="checkbox" id="chk-sample"> MARL 依機率取樣（預設取最大機率的動作）</label>
+      <div class="lbl">規則式大腦的模式</div>
+      <div class="seg wide" id="seg-agent" role="group" aria-label="高層策略">
+        <button data-v="rule_blind" class="on">規則式輪替</button><button data-v="stay">不換位</button>
+      </div>
+      <div class="lbl">換位規則</div>
+      <div class="seg wide" id="seg-rule" role="group" aria-label="換位規則">
+        <button data-v="unilateral" class="on">單方（unilateral）</button><button data-v="mutual">雙方同意（mutual）</button>
+      </div>
+      <div class="row">
+        <button class="btn ghost" id="btn-reset">重新開始</button>
+        <label class="btn ghost file">載入權重 JSON<input type="file" id="file-w" accept="application/json,.json" hidden></label>
+      </div>
+      <p class="fine" id="w-msg">可載入自己匯出的權重檔（scripts/export_policy_js.py 的格式，N=3）。</p>
+    </div>
+
+    <div class="card">
+      <div class="card-h"><h2>顯示</h2></div>
+      <label class="check"><input type="checkbox" id="chk-heat" checked> 尾流熱圖（跟隨者在該處能省多少力）</label>
+      <label class="check"><input type="checkbox" id="chk-badge" checked> 身分碼標記（鳥身顏色＝身體，小圓點＝碼）</label>
+      <label class="check"><input type="checkbox" id="chk-label" checked> 鳥編號</label>
+    </div>
+  </aside>
+</main>
+<footer class="foot">瀏覽器版　·　每步物理在你的瀏覽器裡跑，沒有後端。</footer>
+<script>/*JS*/</script>
+</body>
+</html>

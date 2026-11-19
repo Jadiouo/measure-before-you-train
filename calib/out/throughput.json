@@ -1,0 +1,12 @@
+{
+ "B": 256,
+ "N": 9,
+ "n_max": 9,
+ "dtype": "float32",
+ "decisions": 4,
+ "seconds": 0.26911776199995074,
+ "agent_steps_per_s": 34245.23127537634,
+ "low_level_agent_steps_per_s": 684904.6255075268,
+ "env_decisions_per_s": 3805.025697264038,
+ "note": "agent-step = one high-level decision of one bird (20 physics steps); <5k/s means re-cut matrix (spec sec 7)"
+}
